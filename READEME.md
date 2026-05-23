@@ -14,7 +14,6 @@ A beautifully designed, single‑file HTML page for the sacred Tibetan Buddhist 
 This repository contains a self‑contained, mobile‑responsive webpage that presents:
 
 - **Prayer to the King of the Shākyas** (释迦王祈请文)  
-  Composed by **Sakya Paṇḍita** · 萨迦班智达 造  
   Edition designed by **Khenpo Kunga Rinchen** · 堪布·贡嘎仁钦 编订
 
 - **An Abridged Pūja to the Sixteen Arhats** (十六大阿罗汉略赞供法)  
