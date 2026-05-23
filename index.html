@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>释迦王祈请文 · Prayer to the King of the Shākyas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Noto+Sans+Tibetan:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-cream: #fdf8f1;
+            --bg-warm: #faf3e8;
+            --bg-card: #fffaf4;
+            --text-dark: #2c1f14;
+            --text-medium: #4a3728;
+            --text-light: #6b5542;
+            --gold: #b8861e;
+            --gold-light: #c9a24e;
+            --gold-pale: #e8d5b0;
+            --maroon: #722f37;
+            --maroon-deep: #4a1c22;
+            --maroon-light: #8b3a44;
+            --saffron: #e8a84c;
+            --divider: #d4b896;
+            --shadow-soft: 0 2px 20px rgba(114, 47, 55, 0.06);
+            --shadow-card: 0 4px 30px rgba(44, 31, 20, 0.07);
+            --border-subtle: 1px solid rgba(180, 140, 100, 0.25);
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --font-tibetan: 'Noto Sans Tibetan', 'Microsoft Himalaya', 'Kailasa', 'Tibetan Machine Uni', serif;
+            --font-body: 'Source Serif 4', 'Noto Serif SC', 'Georgia', 'Times New Roman', serif;
+            --font-display: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+            --font-chinese: 'Noto Serif SC', 'STSong', 'SimSun', 'KaiTi', serif;
+            --max-width: 820px;
+            --transition: 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 17px;
+        }
+
+        body {
+            background: var(--bg-cream);
+            color: var(--text-dark);
+            font-family: var(--font-body);
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100vh;
+            background-image:
+                radial-gradient(ellipse at 50% 0%, rgba(184, 134, 30, 0.04) 0%, transparent 70%),
+                radial-gradient(ellipse at 50% 100%, rgba(114, 47, 55, 0.03) 0%, transparent 70%),
+                radial-gradient(ellipse at 0% 50%, rgba(200, 160, 80, 0.02) 0%, transparent 50%),
+                radial-gradient(ellipse at 100% 50%, rgba(200, 160, 80, 0.02) 0%, transparent 50%);
+        }
+
+        /* ── Scrollbar ── */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-warm);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold-pale);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold-light);
+        }
+
+        /* ── Main Container ── */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* ── Top Ornament ── */
+        .top-ornament {
+            text-align: center;
+            padding: 2.5rem 0 0.5rem;
+            color: var(--gold);
+            font-size: 1.6rem;
+            letter-spacing: 0.25em;
+            user-select: none;
+            opacity: 0.7;
+        }
+        .top-ornament span {
+            display: inline-block;
+            animation: subtleGlow 4s ease-in-out infinite;
+        }
+        @keyframes subtleGlow {
+            0%,
+            100% {
+                opacity: 0.55;
+            }
+            50% {
+                opacity: 0.9;
+            }
+        }
+
+        /* ── Hero Header ── */
+        .hero {
+            text-align: center;
+            padding: 2rem 1.5rem 2.5rem;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 2rem auto 0;
+            border-radius: 1px;
+        }
+        .hero .title-main {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4.5vw, 2.8rem);
+            font-weight: 600;
+            color: var(--maroon);
+            letter-spacing: 0.03em;
+            line-height: 1.3;
+            margin-bottom: 0.5rem;
+        }
+        .hero .title-sub {
+            font-family: var(--font-display);
+            font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--gold);
+            letter-spacing: 0.05em;
+            margin-bottom: 1.2rem;
+        }
+        .hero .credits {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            letter-spacing: 0.04em;
+            line-height: 2;
+        }
+        .hero .credits .tibetan-credit {
+            font-family: var(--font-tibetan);
+            font-size: 0.85rem;
+            color: var(--text-medium);
+            letter-spacing: 0.02em;
+        }
+
+        /* ── Section Divider ── */
+        .divider {
+            text-align: center;
+            padding: 1rem 0;
+            color: var(--divider);
+            font-size: 0.7rem;
+            letter-spacing: 0.5em;
+            user-select: none;
+            opacity: 0.6;
+        }
+        .divider.long {
+            position: relative;
+        }
+        .divider.long::before,
+        .divider.long::after {
+            content: '';
+            display: inline-block;
+            width: 60px;
+            height: 1px;
+            background: var(--divider);
+            vertical-align: middle;
+            margin: 0 0.8rem;
+            opacity: 0.5;
+        }
+
+        /* ── Prayer Card ── */
+        .prayer-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem 2rem;
+            margin: 1.5rem 0;
+            box-shadow: var(--shadow-card);
+            border: var(--border-subtle);
+            position: relative;
+            transition: box-shadow var(--transition);
+        }
+        .prayer-card:hover {
+            box-shadow: 0 8px 40px rgba(44, 31, 20, 0.1);
+        }
+        .prayer-card .stanza {
+            margin-bottom: 1.8rem;
+            padding-bottom: 1.4rem;
+            border-bottom: 1px dotted rgba(180, 140, 100, 0.2);
+        }
+        .prayer-card .stanza:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .prayer-card .tibetan {
+            font-family: var(--font-tibetan);
+            font-size: 0.95rem;
+            color: var(--maroon-deep);
+            line-height: 2;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+        }
+        .prayer-card .transliteration {
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            color: var(--text-light);
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 0.4rem;
+            letter-spacing: 0.02em;
+        }
+        .prayer-card .english {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin-bottom: 0.2rem;
+        }
+        .prayer-card .chinese {
+            font-family: var(--font-chinese);
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            line-height: 1.8;
+            font-weight: 400;
+        }
+
+        /* ── Section Header ── */
+        .section-header {
+            text-align: center;
+            padding: 2.5rem 1rem 1rem;
+            position: relative;
+        }
+        .section-header h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.4rem, 3vw, 1.8rem);
+            font-weight: 600;
+            color: var(--maroon);
+            letter-spacing: 0.04em;
+            margin-bottom: 0.3rem;
+        }
+        .section-header h3 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--gold);
+            letter-spacing: 0.06em;
+        }
+        .section-header .ornament {
+            display: block;
+            margin: 0.8rem auto 0;
+            width: 50px;
+            height: 1.5px;
+            background: var(--gold-pale);
+            border-radius: 1px;
+        }
+
+        /* ── Sub-section ── */
+        .sub-section {
+            background: var(--bg-warm);
+            border-radius: var(--radius-md);
+            padding: 1.8rem 1.6rem;
+            margin: 1.2rem 0;
+            border-left: 3px solid var(--gold-pale);
+            transition: border-color var(--transition);
+        }
+        .sub-section:hover {
+            border-left-color: var(--gold);
+        }
+        .sub-section h4 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--maroon);
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.12em;
+        }
+        .sub-section .instruction {
+            font-size: 0.8rem;
+            color: var(--gold);
+            font-style: italic;
+            letter-spacing: 0.04em;
+            margin-bottom: 1rem;
+        }
+        .sub-section .mantra {
+            font-family: var(--font-tibetan);
+            font-size: 1rem;
+            color: var(--maroon-deep);
+            line-height: 2;
+            letter-spacing: 0.03em;
+            background: rgba(184, 134, 30, 0.04);
+            padding: 1rem 1.2rem;
+            border-radius: var(--radius-sm);
+            margin: 0.8rem 0;
+            text-align: center;
+            font-weight: 500;
+        }
+        .sub-section .mantra-small {
+            font-size: 0.85rem;
+            line-height: 1.9;
+        }
+
+        /* ── Numbered Arhat List ── */
+        .arhat-entry {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: 1.5rem 1.4rem;
+            margin: 1rem 0;
+            box-shadow: var(--shadow-soft);
+            border: var(--border-subtle);
+            transition: all var(--transition);
+        }
+        .arhat-entry:hover {
+            box-shadow: 0 6px 24px rgba(114, 47, 55, 0.1);
+            transform: translateY(-1px);
+        }
+        .arhat-entry .arhat-number {
+            display: inline-block;
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            background: rgba(184, 134, 30, 0.08);
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+        }
+        .arhat-entry .arhat-name {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--maroon);
+            margin-bottom: 0.6rem;
+            letter-spacing: 0.03em;
+        }
+        .arhat-entry .tibetan {
+            font-family: var(--font-tibetan);
+            font-size: 0.85rem;
+            color: var(--maroon-deep);
+            line-height: 1.9;
+            margin-bottom: 0.2rem;
+        }
+        .arhat-entry .transliteration {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            font-style: italic;
+            line-height: 1.5;
+            margin-bottom: 0.3rem;
+        }
+        .arhat-entry .english {
+            font-size: 0.88rem;
+            color: var(--text-medium);
+            line-height: 1.6;
+            margin-bottom: 0.15rem;
+        }
+        .arhat-entry .chinese {
+            font-family: var(--font-chinese);
+            font-size: 0.85rem;
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        /* ── Blessing lines ── */
+        .blessing-line {
+            font-family: var(--font-tibetan);
+            font-size: 0.85rem;
+            color: var(--maroon-deep);
+            text-align: center;
+            line-height: 2;
+            margin: 0.6rem 0;
+            font-weight: 500;
+        }
+        .blessing-line-chinese {
+            font-family: var(--font-chinese);
+            font-size: 0.85rem;
+            color: var(--text-dark);
+            text-align: center;
+            line-height: 1.8;
+            margin: 0.4rem 0;
+        }
+
+        /* ── Mandala Offerings ── */
+        .mandala-section {
+            background: linear-gradient(180deg, #fef9f2 0%, #fdf5ea 100%);
+            border-radius: var(--radius-lg);
+            padding: 2rem 1.8rem;
+            margin: 1.8rem 0;
+            border: 1px solid rgba(184, 134, 30, 0.2);
+            box-shadow: var(--shadow-soft);
+        }
+        .mandala-section .mantra-line {
+            font-family: var(--font-tibetan);
+            font-size: 0.9rem;
+            color: var(--maroon-deep);
+            line-height: 2;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            margin: 0.4rem 0;
+        }
+
+        /* ── Dedication ── */
+        .dedication-block {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(184, 134, 30, 0.2);
+            box-shadow: var(--shadow-soft);
+        }
+        .dedication-block .tibetan {
+            font-family: var(--font-tibetan);
+            font-size: 0.9rem;
+            color: var(--maroon-deep);
+            line-height: 2.2;
+            font-weight: 500;
+        }
+        .dedication-block .chinese {
+            font-family: var(--font-chinese);
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            line-height: 2;
+        }
+
+        /* ── Footer ── */
+        .footer-ornament {
+            text-align: center;
+            padding: 3rem 1rem 1rem;
+            color: var(--gold-pale);
+            font-size: 1.2rem;
+            letter-spacing: 0.3em;
+            user-select: none;
+            opacity: 0.6;
+        }
+        .footer-text {
+            text-align: center;
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            color: var(--text-light);
+            letter-spacing: 0.06em;
+            padding: 0.5rem 0 2rem;
+            font-style: italic;
+            opacity: 0.7;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem 0.8rem 2.5rem;
+            }
+            .prayer-card {
+                padding: 1.5rem 1rem;
+            }
+            .prayer-card .tibetan {
+                font-size: 0.82rem;
+                line-height: 1.8;
+            }
+            .prayer-card .transliteration {
+                font-size: 0.72rem;
+            }
+            .prayer-card .english {
+                font-size: 0.85rem;
+            }
+            .prayer-card .chinese {
+                font-size: 0.8rem;
+            }
+            .hero .title-main {
+                font-size: 1.6rem;
+            }
+            .hero .title-sub {
+                font-size: 1rem;
+            }
+            .sub-section {
+                padding: 1.2rem 1rem;
+            }
+            .arhat-entry {
+                padding: 1.2rem 1rem;
+            }
+            .divider.long::before,
+            .divider.long::after {
+                width: 30px;
+                margin: 0 0.4rem;
+            }
+            .mandala-section {
+                padding: 1.2rem 1rem;
+            }
+            .section-header h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+            html {
+                font-size: 15px;
+            }
+            .hero .title-main {
+                font-size: 1.35rem;
+            }
+            .prayer-card .tibetan {
+                font-size: 0.75rem;
+            }
+            .prayer-card .english {
+                font-size: 0.78rem;
+            }
+        }
+
+        /* ── Print Styles ── */
+        @media print {
+            body {
+                background: #fff;
+                color: #000;
+                font-size: 13px;
+            }
+            .prayer-card,
+            .sub-section,
+            .arhat-entry,
+            .mandala-section,
+            .dedication-block {
+                box-shadow: none;
+                border: 1px solid #ccc;
+                break-inside: avoid;
+                background: #fff;
+            }
+            .hero::after,
+            .divider,
+            .top-ornament,
+            .footer-ornament {
+                display: none;
+            }
+            .hero .title-main {
+                color: #000;
+            }
+            .hero .title-sub {
+                color: #555;
+            }
+            .container {
+                max-width: 100%;
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-ornament">
+        <span>❖</span>
+    </div>
+
+    <!-- ═══════════════ HERO HEADER ═══════════════ -->
+    <header class="hero">
+        <h1 class="title-main">释迦王祈请文</h1>
+        <p class="title-sub">Prayer to the King of the Shākyas</p>
+        <div class="credits">
+            <p>萨迦班智达 造 / Composed by Sakya Paṇḍita</p>
+            <p class="tibetan-credit">དཔེ་དེབ་སྒྲིག་སྦྱོར་བ། མཁན་པོ་ཀུན་དགའ་རིན་ཆེན།</p>
+            <p>Edition designed by Khenpo Kunga Rinchen<br>堪布·贡嘎仁钦 编订</p>
+        </div>
+    </header>
+
+    <!-- ═══════════════ DIVIDER ═══════════════ -->
+    <div class="divider long">◆</div>
+
+    <!-- ═══════════════ PRAYER TO THE KING OF THE SHĀKYAS ═══════════════ -->
+    <div class="prayer-card">
+
+        <!-- Stanza 1 -->
+        <div class="stanza">
+            <p class="tibetan">གང་ཞིག་བྱང་ཆུབ་ཤིང་དབང་དྲུང་དུ་བདུད་སྡེ་དཔུང་ཆེ་པ་དང་མཁའ་ལ་ཀུན་ཁྱབ་ཅིང་།</p>
+            <p class="transliteration">Gang-zhig chang-chub shing-wang drung-du dü-dé pung-che-pa dang kha'-la kun-khyab-ching</p>
+            <p class="english">When you were at the foot of the great tree of enlightenment, Māra and his host filling the sky and</p>
+            <p class="chinese">当您在菩提大树下打坐，魔军充斥虚空，</p>
+
+            <p class="tibetan">རྡོ་རྗེ་མདུང་ཐུང་དང་ནི་འཁོར་ལོ་མེ་དང་རི་དང་གངས་རིའི་ཕྲེང་བས་ཆར་དབབ་པ།</p>
+            <p class="transliteration">Dor-jé dung-tung dang-ni khor-lo-mé-dang ri-dang gang-ri'i treng-we char-beb-pa</p>
+            <p class="english">Raining down a cascade of short vajra-lances, fire-wheels, mountains, and glacier mountains,</p>
+            <p class="chinese">降下金刚短矛、火轮、山岳与冰川之洪流，</p>
+
+            <p class="tibetan">རྫུ་འཕྲུལ་རྣམ་པར་འཕྲུལ་ཆེ་སྟོབས་ལྡན་མེ་ཏོག་མདའ་ཆེན་བྱང་ཆུབ་ལྡོག་ཕྱིར་རྩོན་པ་ན།</p>
+            <p class="transliteration">Dzu-trul nam-par trul-ché tob-den mé-tog da'-chen chang-chub dog-chir tsön-pa-na</p>
+            <p class="english">Emanating miraculous displays, powerful, with flower-arrows, striving to turn back your enlightenment,</p>
+            <p class="chinese">示现各种神变，以强力花箭企图遮止您的证悟，</p>
+
+            <p class="tibetan">བྱམས་པའི་ཐུགས་ཀྱིས་ལེགས་པར་འཕམ་མཛད་རྫོགས་པའི་སངས་རྒྱས་གང་ཐོབ་དེ་ལ་མགོ་ཕྱག་འཚལ།</p>
+            <p class="transliteration">Cham-pa'i tug-kyi leg-par pam-dze dzog-pa'i sang-gye gang-nyé dé-la gö-chag-tshal</p>
+            <p class="english">You truly overcame with a mind of loving-kindness: I pay homage with my head to you who obtained complete Buddhahood.</p>
+            <p class="chinese">您以慈悲心真实降服一切：我向您——证得圆满佛果者——顶礼叩首。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 2 -->
+        <div class="stanza">
+            <p class="tibetan">ཁྱོད་ཀྱིས་གཞན་གྱི་དོན་ལས་དུ། །བསམ་དང་འབྱོར་བ་ཕུན་ཚོགས་པས།</p>
+            <p class="transliteration">Khyö-kyi zhen-gyi dön-le-du sam-dang jyor-wa pun-tshog-pe</p>
+            <p class="english">You, for the sake of others, with perfect intention and application,</p>
+            <p class="chinese">您为利益他众，以圆满发心与行持，</p>
+
+            <p class="tibetan">བྱང་ཆུབ་དམ་པར་ཐུགས་སྐྱེད་ཚེ། །ས་ཡང་རྣམ་པ་དྲུག་ཏུ་གཡོས།</p>
+            <p class="transliteration">Chang-chub dam-par tug-kyé-tshe sa-yang nam-pa drug-tu-yös</p>
+            <p class="english">When arousing the mind to holy enlightenment, caused the earth to shake in six ways.</p>
+            <p class="chinese">发起无上菩提心之时，大地以六种方式震动。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 3 -->
+        <div class="stanza">
+            <p class="tibetan">སྦྱིན་དང་ཚུལ་ཁྲིམས་ལེགས་གྲུབ་ཤིང་། །བཟོད་དང་རྩོན་འགྲུས་སྒོམ་པར་མཛད།</p>
+            <p class="transliteration">Jyin-dang tshul-trim leg-drub-shing zö-dang tsön-drü gom-par-dze</p>
+            <p class="english">Generosity and moral behavior well accomplished, patience and diligence cultivated,</p>
+            <p class="chinese">布施与持戒圆满成就，忍辱与精进勤加修习，</p>
+
+            <p class="tibetan">བསམ་གཏན་ཤེས་རབ་མཐར་ཕྱིན་པས། །ཕ་རོལ་ཕྱིན་རྫོགས་ཁྱོད་ཕྱག་འཚལ།</p>
+            <p class="transliteration">Sam-ten shé-rab tar-chin-pe pa-rol-chin-dzog khyö-chag-tshal</p>
+            <p class="english">Meditation and discriminating insight perfected, thus the perfections fulfilled: homage to you!</p>
+            <p class="chinese">禅定与般若智慧究竟圆满，六度波罗蜜由此具足：顶礼您！</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 4 -->
+        <div class="stanza">
+            <p class="tibetan">འགྲོ་མགོན་དང་པོ་བཏམ་པ་ན། །འཇིག་རྟེན་མཁས་པ་ཐམས་ཅད་དགའ།</p>
+            <p class="transliteration">Dro-gön dang-po tam-pa-na jig-ten khe-pa tam-che-ga'</p>
+            <p class="english">When you, Protector of Beings, were first born, all the wise ones in the world were delighted.</p>
+            <p class="chinese">众生怙主，当您初降人间，世间一切智者皆大欢喜。</p>
+
+            <p class="tibetan">བདུད་རྣམས་ཤིན་ཏུ་སྡོད་པ་སྐྱེས། །མུ་སྟེགས་ཆེ་པ་ལྟ་དག་སྐྲག།</p>
+            <p class="transliteration">Dü-nam shin-tu dog-pa-kyé mu-teg-che-pa ta'-dag-trag</p>
+            <p class="english">The Māras were greatly afraid. All the Tīrthikas were frightened.</p>
+            <p class="chinese">群魔惊惧万分，一切外道无不战栗。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 5 -->
+        <div class="stanza">
+            <p class="tibetan">དེ་ལས་ཁྱོད་ཀྱི་བསྟན་པ་ནི། །ཉི་མའི་འོད་བཞིན་ཕྲིན་ལས་མངའ།</p>
+            <p class="transliteration">Dé-le khyö-kyi ten-pa-ni nyi-ma'i ö-zhin trin-le-nga'</p>
+            <p class="english">On account of that, to you whose doctrine is active like the rays of the sun,</p>
+            <p class="chinese">因此，对您——教法如日光般普照，</p>
+
+            <p class="tibetan">རྣམ་པ་ཀུན་ཏུ་མི་འདྲུ་བའི། །རྩ་ལག་ཁྱོད་ལ་བདག་སྐྱབས་འཆི།</p>
+            <p class="transliteration">Nam-pa kun-tu mi-lu-wa'i tsa-lag khyö-la dag-kyab-chi</p>
+            <p class="english">Not deceiving in any way, root and branch, I go for refuge.</p>
+            <p class="chinese">丝毫无有欺诳者——从根本到枝末，我皈依于您。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 6 -->
+        <div class="stanza">
+            <p class="tibetan">ཁྱོད་ཀྱི་གསུང་རབ་སེང་གེའི་སྒྲ། །ལྷར་བཅས་འཇིག་རྟེན་སྒྲགས་པ་ན།</p>
+            <p class="transliteration">Khyö-kyi sung-rab seng-gé'i-dra lhar-che jig-ten drag-pa-na</p>
+            <p class="english">Your excellent speech, a lion's roar, when proclaimed in the world, including the god realms,</p>
+            <p class="chinese">您的殊胜言教，犹如狮子吼声，宣扬于世间及天界之时，</p>
+
+            <p class="tibetan">ཚངས་དང་ཁྱབ་འཇུག་ཀུག་པར་གྱུར། །ལྷའི་བླ་མ་བཝ་ཏར་ཞུམ།</p>
+            <p class="transliteration">Tshang-dang khyab-jug kug-par-gyur lha'i la-ma wa-tar-zhum</p>
+            <p class="english">Made Brahmā and Viṣṇu mute, the highest gods intimidated like a fox.</p>
+            <p class="chinese">令梵天与毗湿奴哑口无言，最高诸天如狐狸般惶恐。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 7 -->
+        <div class="stanza">
+            <p class="tibetan">མུ་སྟེགས་ཀང་མིག་གྲོག་ཁར་དང་། །དྲང་སྲོང་རྒྱས་པ་གནས་བརྗོད་སོགས།</p>
+            <p class="transliteration">Tub-pa kang-mig drog-khar-dang drang-song gye-pa ne-jog-sog</p>
+            <p class="english">The sages Akṣapāda and Vālmīki, the rishis Vyāsa, Vasiṣṭha, and others,</p>
+            <p class="chinese">阿差波陀与伐弥基仙人，毗耶娑、婆私吒等诸仙人，</p>
+
+            <p class="tibetan">སྒྲགས་པ་ཐོབ་པ་དེ་དག་ཀུན། །ཆོས་ཀྱིས་འཕམ་མཛད་ཁྱོད་ལ་འདུད།</p>
+            <p class="transliteration">Drag-pa tob-pa dé-dag-kun chö-kyi pam-dze khyö-la-dü</p>
+            <p class="english">All those who obtained fame; to you who overcame their doctrines, I bow.</p>
+            <p class="chinese">一切获得盛名者；向您——降伏其教义者——顶礼。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 8 -->
+        <div class="stanza">
+            <p class="tibetan">ཁྱོད་ཀྱིས་བྱང་ཆུབ་མཆོག་ཐོབ་ནས། །འགྲོ་བའི་དོན་མཛད་ངོ་མཚར་ཆེ།</p>
+            <p class="transliteration">Khyö-kyi chang-chub chog-nyé-ne dro-wa'i dön-dze ngo-tshar-ché</p>
+            <p class="english">You, having attained the supreme enlightenment, acted for the benefit of beings, Wondrous One!</p>
+            <p class="chinese">您证得无上菩提后，为众生利益而行，奇哉妙哉！</p>
+
+            <p class="tibetan">སྲིད་པའི་སྲེད་ལས་མ་གྲོལ་བར། །སྐུ་སྲོག་དང་བའི་བ་སྤུ་ལྡང་།</p>
+            <p class="transliteration">Si-pa'i sé-le ma-drol-war ku-sog tang-we wa-pu-dang</p>
+            <p class="english">Not freed of the cravings for existence, you abandoned body and life, hair raising!</p>
+            <p class="chinese">未脱轮回贪执之众生，舍弃身命，令人毛骨悚然！</p>
+
+            <p class="tibetan">ཉི་ཀྱི་སྐུ་སྲོག་མི་གཟིགས་པར། །ཁྱེད་ལ་ཕན་པར་བྱའོ་ཞེས།</p>
+            <p class="transliteration">Nyi-kyi ku-sog mi-zig-par khyé-la pen-par cha-o-zhé</p>
+            <p class="english">Without regard for your body and life, saying, "I will act to benefit you,"</p>
+            <p class="chinese">您不顾身命，说道："我将为您们谋利益"，</p>
+
+            <p class="tibetan">མགོན་མེད་བདག་ཅག་རྗེས་གཟུང་བ། །མགོན་པོ་ཁྱོད་ལ་བདག་སྐྱབས་འཆི།</p>
+            <p class="transliteration">Gön-mé dag-chag jé-zung-wa gön-po khyö-la dag-kyab-chi</p>
+            <p class="english">Caring for us without protector, we go to you, Protector, for refuge.</p>
+            <p class="chinese">关爱无有怙主的我等，我等归依您——怙主。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 9 -->
+        <div class="stanza">
+            <p class="tibetan">རྒྱལ་བས་བདུད་སྡེ་བཏུལ་བ་དང་། །མུ་སྟེགས་མ་ལུས་འཕམ་མཛད་དང་།</p>
+            <p class="transliteration">Gyal-we dü-dé tul-wa-dang mu-teg ma-lü pam-dze-dang</p>
+            <p class="english">The Conqueror defeated the demonic host, overcame all the Tīrthikas,</p>
+            <p class="chinese">胜者降服魔众，摧破一切外道，</p>
+
+            <p class="tibetan">ཉན་ཐོས་སློབ་མ་གྲངས་མེད་གྲོལ། །རྒྱལ་སྲས་དམ་པ་ལུང་བསྟན་མཛད།</p>
+            <p class="transliteration">Nyen-tö lob-ma drang-mé-trol gyal-se dam-pa lung-ten-dze</p>
+            <p class="english">Liberated countless Hearers and students, and predicted the holy Conqueror's Children.</p>
+            <p class="chinese">解脱无量声闻与学人，并授记圣洁的胜者菩萨。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 10 -->
+        <div class="stanza">
+            <p class="tibetan">དེ་འདྲའི་ལེགས་ཚོགས་མཐོང་བ་རྣམས། །ཁྱོད་ཀྱི་ཡོན་ཏན་དོན་གཉེར་བས།</p>
+            <p class="transliteration">Dén-dra'i leg-tshog tong-wa-nam khyö-kyi yön-ten dön-nyer-we</p>
+            <p class="english">Because those beholding such excellent accumulations aspire for your qualities,</p>
+            <p class="chinese">由于见到如此殊胜资粮的众生渴望您的功德，</p>
+
+            <p class="tibetan">བྱང་ཆུབ་ལས་དུ་འཇུག་པ་བདག །ལར་ཡང་ཁྱོད་ལ་བདག་སྐྱབས་འཆི།</p>
+            <p class="transliteration">Chang-chub le-du jug-pa-dag lar-yang khyö-la dag-kyab-chi</p>
+            <p class="english">I who engage for the sake of enlightenment, once more go to you for refuge.</p>
+            <p class="chinese">我这趋向菩提者，再次皈依于您。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 11 -->
+        <div class="stanza">
+            <p class="tibetan">ཁྱོད་ཀྱི་སྲས་ནི་འཇམ་པའི་དབྱངས། །སློབ་མ་ཤ་རི་དྭ་ཏིའི་བུ།</p>
+            <p class="transliteration">Khyö-kyi se-ni jam-pa'i-yang lob-ma sha-ra-dva-ti'i-bu</p>
+            <p class="english">Your sons are Mañjughoṣa, disciple Śāriputra, and</p>
+            <p class="chinese">您的弟子有妙音菩萨、声闻舍利弗，</p>
+
+            <p class="tibetan">བྱམས་པ་རྒྱལ་ཚབ་དམ་པར་མཛད། །སེམས་ཤེས་སུ་ཞིག་ཐེ་ཚོམ་ཟ།</p>
+            <p class="transliteration">Cham-pa gyal-tshab dam-par-dze sem-shé su-zhig té-tshom-za</p>
+            <p class="english">Maitreya, the holy regent: who, knowing their minds, has doubts?</p>
+            <p class="chinese">以及弥勒——圣洁的法王子：了知其心者，谁还会有疑惑？</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 12 -->
+        <div class="stanza">
+            <p class="tibetan">ཁྱོད་ཀྱི་ཡོན་ཏན་སྨོས་ཅི་འཚལ། །སྲས་ཀྱི་ཡོན་ཏན་མཐོང་བས་འཁུམས།</p>
+            <p class="transliteration">Khyö-kyi yön-ten mö-chi-tshal se-kyi yön-ten tong-we-khum</p>
+            <p class="english">What need to speak of your qualities? Due to seeing the qualities of your children, I am overwhelmed.</p>
+            <p class="chinese">何须赘言您的功德？仅见您弟子们的功德，已令我心潮澎湃，无限感动。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 13 -->
+        <div class="stanza">
+            <p class="tibetan">ཀྱ་རེང་ཤར་བའི་གཟི་བྱིད་ཀྱིས། །པདྨོའི་གཉེན་གྱི་འོད་ཟེར་གོ།</p>
+            <p class="transliteration">Kya-reng shar-wa'i zi-ji-kyi pe-mö nyen-gyi ö-zer-go</p>
+            <p class="english">By the brilliance of the rising dawn, the light rays of the friend of the lotus are known.</p>
+            <p class="chinese">以破晓黎明的光辉，莲花之友——日——的光芒得以彰显。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 14 -->
+        <div class="stanza">
+            <p class="tibetan">ཇི་ལྟ་བ་དང་ཇི་སྙེད་ཆོས། །ཁྱོད་ཀྱིས་རྣམ་པ་ཀུན་ཐོབ་པས།</p>
+            <p class="transliteration">Ji-ta-wa-dang ji-nyé-chö khyö-kyi nam-pa kun-nyé-pe</p>
+            <p class="english">Because you obtained all aspects — the nature and the extent of the Dharma,</p>
+            <p class="chinese">因您证得一切方面——法之自性与法之广度，</p>
+
+            <p class="tibetan">བཞེད་པའི་ཕྲིན་ལས་དོན་བཞིན་དུ། །སྒྲུབ་པ་ཁྱོད་ལ་བདག་ཕྱག་འཚལ།</p>
+            <p class="transliteration">Zhé-pa'i trin-le dön-zhin-du drub-pa khyö-la dag-chag-tshal</p>
+            <p class="english">To you who accomplished the desired deeds according to the goal, I pay homage.</p>
+            <p class="chinese">向您——如实成就所愿事业者——顶礼。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <!-- Stanza 15 (Closing) -->
+        <div class="stanza">
+            <p class="tibetan">དེ་ལྟར་འགྲོ་བའི་བླ་མ་ཤཱཀྱའི་རིགས། །བུ་རམ་ཤིང་པའི་རྒྱུད་ལས་འཁྲུངས་པ།</p>
+            <p class="transliteration">Dé-tar dro-wa'i la-ma shā-kya'i-rig bu-ram-shing-pa'i dung-gyü le-trung-pa</p>
+            <p class="english">Accordingly, Guru of Beings, born from the lineage of the Shākya clan, the "Sugar-Caners,"</p>
+            <p class="chinese">如此，众生上师，诞生于释迦族——"甘蔗种族"——血统，</p>
+
+            <p class="tibetan">བཅོམ་ལྡན་རྫོགས་པའི་སངས་རྒྱས་བསྟོད་པ་ཡིས། །འགྲོ་བའི་ཀུན་མཁྱེན་མྱུར་དུ་ཐོབ་པར་ཤོག།</p>
+            <p class="transliteration">Chom-den dzog-pa'i sang-gye tö-pa-yi dro-we kun-khyen nyur-du tob-par-sho</p>
+            <p class="english">Blessed One, Complete Buddha, by this praise may beings quickly obtain omniscience.</p>
+            <p class="chinese">薄伽梵、圆满佛陀，以此赞颂，愿众生迅速证得一切种智。</p>
+        </div>
+    </div>
+
+    <!-- ═══════════════ MAJOR DIVIDER ═══════════════ -->
+    <div class="divider long">◆ ◇ ◆</div>
+
+    <!-- ═══════════════ ABRIDGED PŪJA ═══════════════ -->
+    <div class="section-header">
+        <h2>གནས་བརྟན་ཕྱག་མཆོད་བསྡུས་པ།</h2>
+        <h3>An Abridged Pūja of Homage and Offerings to the Sthaviras</h3>
+        <p style="font-family:var(--font-chinese);font-size:0.9rem;color:var(--text-medium);margin-top:0.3rem;">《十六大阿罗汉略赞供法》</p>
+        <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.2rem;">班禅·释迦室利 造</p>
+        <span class="ornament"></span>
+    </div>
+
+    <!-- ── REFUGE AND BODHICITTA ── -->
+    <div class="sub-section">
+        <h4>སྐྱབས་འགྲོ་སེམས་བསྐྱེད། · Refuge and Bodhicitta · 皈依与发菩提心</h4>
+        <p class="instruction">(Repeat 3 times / 念诵三遍)</p>
+        <p class="tibetan">སངས་རྒྱས་ཆོས་དང་ཚོགས་ཀྱི་མཆོག་རྣམས་ལ།</p>
+        <p class="transliteration">Sang-gye chö-dang tshog-kyi chog-nam-la</p>
+        <p class="english">In the Buddha, Dharma, and Sangha I take Refuge until Enlightenment is reached;</p>
+        <p class="chinese">诸佛正法贤圣僧，直至菩提我皈依；</p>
+
+        <p class="tibetan">བྱང་ཆུབ་བར་དུ་བདག་ནི་སྐྱབས་སུ་མཆི།</p>
+        <p class="transliteration">Chang-chub bar-du dag-ni kyab-su-chi</p>
+
+        <p class="tibetan">བདག་གིས་སྦྱིན་སོགས་བགྱིས་པའི་ཚོགས་རྣམས་ཀྱིས།</p>
+        <p class="transliteration">Dag-gi jyin-sog gyi-pa'i tshog-nam-kyi</p>
+        <p class="english">by the merits of giving and other good deeds, may I achieve Buddhahood for the sake of all sentient beings.</p>
+        <p class="chinese">我以所修施等诸资粮，为利有情故愿成佛。</p>
+
+        <p class="tibetan">འགྲོ་ལ་ཕན་ཕྱིར་སངས་རྒྱས་འགྲུབ་པར་ཤོག</p>
+        <p class="transliteration">Dro-la pen-chir sang-gye drub-par-shog</p>
+    </div>
+
+    <!-- ── FOUR IMMEASURABLES ── -->
+    <div class="sub-section">
+        <h4>ཚད་མེད་བཞི། · Four Immeasurables · 四无量心</h4>
+        <p class="tibetan">སེམས་ཅན་ཐམས་ཅད་བདེ་བ་དང་བདེ་བའི་རྒྱུ་དང་ལྡན་པར་གྱུར་ཅིག</p>
+        <p class="english">May all beings have happiness and the causes of happiness;</p>
+        <p class="chinese">愿诸众生永具安乐及安乐因；</p>
+
+        <p class="tibetan">སྡུག་བསྔལ་དང་སྡུག་བསྔལ་གྱི་རྒྱུ་དང་བྲལ་བར་གྱུར་ཅིག</p>
+        <p class="english">May all be free from suffering and the causes of suffering;</p>
+        <p class="chinese">愿诸众生永离众苦及众苦因；</p>
+
+        <p class="tibetan">སྡུག་བསྔལ་མེད་པའི་བདེ་བ་དང་མི་འབྲལ་བར་གྱུར་ཅིག</p>
+        <p class="english">May all never be separated from the Bliss that is sorrowless;</p>
+        <p class="chinese">愿诸众生永具无苦之乐；</p>
+
+        <p class="tibetan">ཉེ་རིང་ཆགས་དང་ཉི་དང་བྲལ་བའི་བཏང་སྙོམས་ལ་གནས་པར་གྱུར་ཅིག</p>
+        <p class="english">May all live in equanimity, free of attachment and aversion to those near and far.</p>
+        <p class="chinese">愿诸众生远离贪瞋亲疏，住平等舍。</p>
+    </div>
+
+    <!-- ── INVOCATION ── -->
+    <div class="sub-section">
+        <h4>Invocation · 祈请</h4>
+        <p class="tibetan">སྐྱབས་གནས་དཀོན་མཆོག་གསུམ་གྱི་བདེན་པ་དང་།</p>
+        <p class="tibetan">རྒྱལ་བ་སྲས་བཅས་རྣམས་ཀྱི་བྱིན་རླབས་དང་།</p>
+        <p class="tibetan">ཚོགས་གཉིས་མངའ་ཐང་ཆོས་དབྱིངས་དག་པའི་སྟོབས་ཀྱིས།</p>
+        <p class="english">By the truth of the Three Jewels, the blessings of the Buddhas and Their Sons, by the possession of the two accumulations, and by the strength of the purity of the Dharmadhatu,</p>
+        <p class="chinese">依三宝真谛、诸佛菩萨加持力、二资粮圆满，及法界清净威力故，</p>
+
+        <p class="tibetan">སྣོད་བཅུད་བདེ་ཆེན་ཞིང་གི་བཀོད་པའི་དབུས།</p>
+        <p class="english">there, in the middle of a blissful pure realm, is a great and immeasurable palace made of beautiful jewels.</p>
+        <p class="chinese">于大乐净土中，有悦意珍宝所成之广大天宫，</p>
+
+        <p class="tibetan">ཡིད་འཕྲོག་ནོར་བུའི་ཞལ་མེད་ཁང་ཆེན་པོར།</p>
+        <p class="english">Within is a precious lion throne upon which rests a supreme seat of lotus and moon.</p>
+        <p class="chinese">内有珍贵狮座、莲花月轮座，</p>
+
+        <p class="tibetan">རིན་ཆེན་སེང་ཁྲི་པདྨའི་གདན་མཆོག་དང་།</p>
+        <p class="tibetan">དངོས་བཤམས་གཟུངས་རིག་མོས་པའི་སྟོབས་ཀྱིས་སྤྲུལ་པའི།</p>
+        <p class="english">Created by the power of Dharani, vast clouds of offerings arise. May these be accepted.</p>
+        <p class="chinese">实设及意变之供云，广大云聚，祈请纳受。</p>
+
+        <p class="tibetan">མཆོད་སྤྲིན་རྒྱ་མཚོ་གང་ཞིང་མཆོད་གྱུར་ཅིག</p>
+    </div>
+
+    <!-- ── MANTRA ── -->
+    <div class="sub-section">
+        <h4>Cloud of Offerings Mantra · 供云咒</h4>
+        <p class="instruction">(Recite 3 times with small cymbals / 念三遍，小钹伴奏)</p>
+        <div class="mantra mantra-small">
+            ན་མོ་རཏྣ་ཏྲ་ཡཱ་ཡ། ཨོཾ་ན་མོ་བྷ་ག་ཝ་ཏེ། བཛྲ་སཱ་ར་པྲ་མརྡ་ནེ།<br>
+            ཏ་ཐཱ་ག་ཏཱ་ཡ། ཨརྷ་ཏེ། སཾ་མྱཀྶཾ་བུདྡྷ་ཡ། ཏདྱ་ཐཱ། ཨོཾ་བཛྲེ་བཛྲེ། མ་ཧཱ་བཛྲེ།<br>
+            མ་ཧཱ་ཏེ་ཛོ་བཛྲེ། མ་ཧཱ་བིདྱཱ་བཛྲེ། མ་ཧཱ་བོ་དྷི་ཙིཏྟ་བཛྲེ། མ་ཧཱ་བོ་དྷི་མཎྜོ་པ་སཾ་ཀྲ་མ་ཎ་བཛྲེ།<br>
+            སརྦ་ཀརྨ་ཨཱ་ཝ་ར་ཎ་བི་ཤོ་དྷ་ན་བཛྲ་སྭཱ་ཧཱ།
+        </div>
+        <p class="transliteration" style="text-align:center;">Namo Ratna Trayāya / Oṃ Namo Bhagavate / Vajra Sārapra Mardane / Tathāgatāya / Arhaté / Samyaksaṃ Buddhaya / Tadyathā / Oṃ Vajre Vajre / Mahā Vajre / Mahā Tejo Vajre / Mahā Vidyā Vajre / Mahā Bodhichitta Vajre / Mahā Bodhi Maṇḍo Pasaṃ Kramaṇa Vajre / Sarva Karma Āvaraṇa Vishodhana Vajra Svāhā</p>
+    </div>
+
+    <!-- ── PALACE & INVITATION ── -->
+    <div class="prayer-card">
+        <p class="instruction" style="text-align:center;margin-bottom:1.5rem;">(Hold incense at heart; ring cymbals at end of each stanza / 手持燃香合掌，每四句敲小钹)</p>
+
+        <div class="stanza">
+            <p class="tibetan">ལག་མཐིལ་ཏར་ཉམས་རིན་ཆེན་གྱིས་སྤྲས་པའི།</p>
+            <p class="tibetan">ལྗོན་ཤིང་ཆུ་མཚོས་བརྒྱན་པའི་ས་གཞིའི་དབུས།</p>
+            <p class="english">The ground is as smooth as the palm of a hand and is adorned with trees and lakes which are decorated with precious ornaments.</p>
+            <p class="chinese">地面如掌平滑，宝树严饰，湖泊盈布，</p>
+
+            <p class="tibetan">རིན་ཆེན་ལས་གྲུབ་དྲུ་བཞི་སྒོ་བཞི་པ།</p>
+            <p class="english">In the middle stand four walls and four doors made of jewels;</p>
+            <p class="chinese">中有宝成四墙四门，</p>
+
+            <p class="tibetan">པདྨ་ཉི་ཟླས་བརྒྱན་པའི་གདན་སྟེང་དུ།</p>
+            <p class="english">within is a throne adorned with a lotus, sun and moon, upon which is the Protector of beings,</p>
+            <p class="chinese">莲日月座，上有众生怙主，</p>
+
+            <p class="tibetan">ཐུགས་རྗེས་འཚོ་བའི་དུས་ཀྱི་གདུལ་བྱ་རྣམས།</p>
+            <p class="english">He who by compassion establishes His disciples on the path of Liberation</p>
+            <p class="chinese">于五浊恶世以大悲心引导所化众生入解脱道者，</p>
+
+            <p class="tibetan">རྣམ་གྲོལ་ལམ་ལ་འགོད་མཛད་འགྲོ་བའི་མགོན།</p>
+            <p class="english">during this degenerate age.</p>
+
+            <p class="tibetan">ཐུབ་པ་མཆོག་དང་གནས་བརྟན་ཆེན་པོ་རྣམས།</p>
+            <p class="english">We supplicate you, Oh highest Muni and great Holy Elders,</p>
+            <p class="chinese">至尊能仁及诸大长老圣者，</p>
+
+            <p class="tibetan">འཁོར་དང་བཅས་པ་འདིར་གཤེགས་སུ་གསོལ།</p>
+            <p class="english">to come to this place with your retinue.</p>
+            <p class="chinese">祈请眷属俱临此处。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <div class="stanza">
+            <p class="tibetan">ཕྱོགས་བཅུའི་རྒྱལ་བ་སྲས་བཅས་ཐམས་ཅད་དང་།</p>
+            <p class="english">All you Conquerors of the ten directions, with your Spiritual Sons,</p>
+            <p class="chinese">十方诸佛菩萨众，</p>
+
+            <p class="tibetan">ཤེས་རབ་མེ་འབར་ཉོན་མོངས་མཚོ་སྐེམས་ཤིང་།</p>
+            <p class="english">whose blazing fire of wisdom dries up the ocean of addictions,</p>
+            <p class="chinese">以智慧火烧尽烦恼海，</p>
+
+            <p class="tibetan">རྣམ་གྲོལ་བསོད་ནམས་ཞིང་དུ་བཀའ་འདོད་པ།</p>
+            <p class="english">and the Community of Listeners in the ten directions</p>
+            <p class="chinese">十方声闻僧众，</p>
+
+            <p class="tibetan">ཕྱོགས་བཅུའི་ཉན་ཐོས་དགེ་འདུན་བཞུགས་སུ་གསོལ།</p>
+            <p class="english">whom the Buddha praised as a field of merit for Liberation, I beseech you to be seated.</p>
+            <p class="chinese">为解脱福田所赞，祈请安住。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <div class="stanza">
+            <p class="tibetan">ཡོན་སྦྱོར་མཆོད་པའི་གནས་སུ་ཆེན་དྲེན་གྱི།</p>
+            <p class="english">I invite you to this place of worship and make offerings.</p>
+            <p class="chinese">我以供养迎请至此供养处，</p>
+
+            <p class="tibetan">འགྲོ་བའི་དོན་ཕྱིར་མཆོད་ཀྱིས་གཤེགས་སུ་གསོལ།</p>
+            <p class="english">By these offerings, I pray that you come for the sake of all living beings.</p>
+            <p class="chinese">为利众生故祈请临此。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <div class="stanza">
+            <p class="tibetan">འགྲོ་བའི་མགོན་པོ་ཤཱཀྱ་སེང་གེ་ཡིས།</p>
+            <p class="english">Protectors of the Teachings, great Saints,</p>
+            <p class="chinese">众生怙主释迦狮子所付法教，</p>
+
+            <p class="tibetan">སངས་རྒྱས་བསྟན་པ་གང་གི་ཕྱག་ཏུ་བཞག</p>
+            <p class="english">you upon whom the Shākya Lion has bestowed His Teachings,</p>
+
+            <p class="tibetan">གསུང་རབ་རིན་ཆེན་སྒྲོམ་གྱི་ཁ་འབྱེད་པའི།</p>
+            <p class="english">the openers of the treasure chest of precious scriptures,</p>
+            <p class="chinese">开启珍贵经藏之护法大阿罗汉，</p>
+
+            <p class="tibetan">ཆོས་སྐྱོང་དགྲ་བཅོམ་ཆེན་པོ་བཞུགས་སུ་གསོལ།</p>
+            <p class="english">I beseech you to be seated.</p>
+            <p class="chinese">祈请安住。</p>
+        </div>
+
+        <div class="divider">•</div>
+
+        <div class="stanza">
+            <p class="tibetan">དམ་ཆོས་འཕེལ་བའི་ལས་སུ་ཆེན་དྲེན་གྱི།</p>
+            <p class="english">I invite you in order to spread the Holy Teachings.</p>
+            <p class="chinese">为宏扬圣教故，</p>
+
+            <p class="tibetan">འགྲོ་བའི་དོན་ཕྱིར་མཆོད་ཀྱིས་གཤེགས་སུ་གསོལ།</p>
+            <p class="english">By my offerings, I pray that you come for the sake of living beings.</p>
+            <p class="chinese">我以此供养迎请，为利众生请降临。</p>
+        </div>
+    </div>
+
+    <!-- ── SIXTEEN ARHATS ── -->
+    <div class="prayer-card">
+        <p class="tibetan" style="text-align:center;margin-bottom:1.2rem;font-weight:600;">ཐུབ་པས་བཀའ་འགོད་བསྟན་པའི་རྒྱལ་མཚན་འཛིན།</p>
+        <p class="english" style="text-align:center;margin-bottom:0.3rem;">The Sage has ordered you to uphold the Banner of the Teaching.</p>
+        <p class="chinese" style="text-align:center;margin-bottom:1.5rem;">能仁敕令持法幢</p>
+
+        <p class="tibetan" style="text-align:center;margin-bottom:0.3rem;">ཡན་ལག་འབྱུང་དང་མ་ཕམ་ནགས་ན་གནས།</p>
+        <p class="english" style="text-align:center;margin-bottom:0.3rem;">O Noble Angaja, Ajita, Vanavasin,</p>
+        <p class="chinese" style="text-align:center;margin-bottom:0.3rem;">因竭陀、阿氐多、那迦犀那、</p>
+
+        <p class="tibetan" style="text-align:center;margin-bottom:0.3rem;">དུས་ལྡན་རྡོ་རྗེ་མོའི་བུ་བཟང་པོ་དང་།</p>
+        <p class="english" style="text-align:center;margin-bottom:0.3rem;">Kalika, Vajriputra, Bhadra,</p>
+        <p class="chinese" style="text-align:center;margin-bottom:0.3rem;">迦里迦、伐阇罗弗多、跋陀罗、</p>
+
+        <p class="tibetan" style="text-align:center;margin-bottom:0.3rem;">གསེར་བེའུ་བྷ་ར་དྷྭ་ཛ་གསེར་ཆེན་མཆོག</p>
+        <p class="english" style="text-align:center;margin-bottom:0.3rem;">Kanakavatsa, Kanaka Bharadvaja,</p>
+        <p class="chinese" style="text-align:center;margin-bottom:0.3rem;">迦诺迦伐蹉、迦诺迦跋黎堕阇、</p>
+
+        <p class="tibetan" style="text-align:center;margin-bottom:0.3rem;">འཕགས་པ་བ་ཀུ་ལ་དང་སྒྲ་ཆེན་འཛིན།</p>
+        <p class="english" style="text-align:center;margin-bottom:0.3rem;">Noble Bakula, Rahula,</p>
+        <p class="chinese" style="text-align:center;margin-bottom:0.3rem;">圣巴沽拉、罗怙罗、</p>
+
+        <p class="tibetan" style="text-align:center;margin-bottom:0.3rem;">ལམ་ཕྲན་བྷ་ར་དྷྭ་ཛ་བསོད་སྙོམས་ལེན།</p>
+        <p class="english" style="text-align:center;margin-bottom:0.3rem;">Chudapanthaka, Pindola Bharadvaja, Mahapanthaka,</p>
+        <p class="chinese" style="text-align:center;margin-bottom:0.3rem;">注荼半托迦、宾度罗跋罗堕阇、半托迦、</p>
+
+        <p class="tibetan" style="text-align:center;margin-bottom:0.3rem;">ལམ་བསྟན་ཀླུའི་སྡེ་སྦེད་བྱེད་མི་ཕྱེད་པ།</p>
+        <p class="english" style="text-align:center;margin-bottom:0.3rem;">Nagasena, Gopaka, Abheda,</p>
+        <p class="chinese" style="text-align:center;margin-bottom:0.3rem;">那伽犀那、苏频陀、阿秘特，</p>
+
+        <p class="tibetan" style="text-align:center;margin-bottom:0.5rem;">དགྲ་བཅོམ་གནས་བརྟན་ཆེན་པོ་འདི་དག་ནི།</p>
+        <p class="english" style="text-align:center;margin-bottom:0.3rem;">You the great Arhat Elders,</p>
+        <p class="chinese" style="text-align:center;margin-bottom:0.5rem;">汝等大阿罗汉圣者，</p>
+
+        <p class="tibetan" style="text-align:center;margin-bottom:0.3rem;">བསོད་ནམས་རིན་ཆེན་གླིང་དུ་ཆེན་དྲེན་གྱི།</p>
+        <p class="english" style="text-align:center;margin-bottom:0.3rem;">I invite you to this island of precious merit.</p>
+        <p class="chinese" style="text-align:center;margin-bottom:0.3rem;">我迎请至福慧宝洲，</p>
+
+        <p class="tibetan" style="text-align:center;">འགྲོ་བའི་དོན་ཕྱིར་མཆོད་ཀྱིས་གཤེགས་སུ་གསོལ།</p>
+        <p class="english" style="text-align:center;">I pray that you come here for the sake of living beings.</p>
+        <p class="chinese" style="text-align:center;">为利众生故祈请降临。</p>
+    </div>
+
+    <!-- ── INDIVIDUAL ARHATS ── -->
+    <!-- Arhat 1: Angaja -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 1</span>
+        <p class="arhat-name">Angaja · 因竭陀</p>
+        <p class="tibetan">གངས་རི་ཆེན་པོ་ཏི་སེ་ན།</p>
+        <p class="english">I bow to the noble Elder Angaja, upon the great snow mountain Tisela.</p>
+        <p class="chinese">大雪山上大圣尊，长老圣者因竭陀，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་ཡན་ལག་འབྱུང་།</p>
+        <p class="english">One hand holds an incense pot, the other a yak-tail whisk.</p>
+        <p class="chinese">罗汉千三百围绕，手持香炉拂尘礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་སྟོང་དང་གསུམ་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">སྤོས་ཕོར་རྔ་ཡབ་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 2: Ajita -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 2</span>
+        <p class="arhat-name">Ajita · 阿氐多</p>
+        <p class="tibetan">དྲང་སྲོང་རི་ཡི་གཤེལ་ནག་ན།</p>
+        <p class="english">I bow to the noble Elder Ajita, upon the slopes of Rishi Mountain.</p>
+        <p class="chinese">仙人山麓大圣尊，长老圣者阿氐多，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་མ་ཕམ་པ།</p>
+        <p class="english">Both hands gesture meditation. Surrounded by a hundred Arhats.</p>
+        <p class="chinese">罗汉百数各围绕，双手等持我顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་བརྒྱ་ཕྲག་གཅིག་གིས་བསྐོར།</p>
+        <p class="tibetan">ཕྱག་གཉིས་མཉམ་བཞག་མཛེས་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 3: Vanavasin -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 3</span>
+        <p class="arhat-name">Vanavasin · 那迦犀那</p>
+        <p class="tibetan">ལོ་མ་བདུན་པའི་རི་ཕུག་ན།</p>
+        <p class="english">I bow to Elder Vanavasin, in the cave of Seven-Leaves Mountain.</p>
+        <p class="chinese">七叶窟中大圣尊，长老圣者那迦犀，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་ནགས་ན་གནས།</p>
+        <p class="english">Threatens with right forefinger, holds whisk. Four hundred Arhats.</p>
+        <p class="chinese">罗汉千四百围绕，期克拂尘我顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་སྟོང་དང་བཞི་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">སྡིག་མཛུབ་རྔ་ཡབ་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 4: Kalika -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 4</span>
+        <p class="arhat-name">Kalika · 迦里迦</p>
+        <p class="tibetan">འཛམ་བུ་གླིང་གི་ཟངས་གླིང་ན།</p>
+        <p class="english">I bow to Elder Kalika, on the copper island of Jambudvipa.</p>
+        <p class="chinese">赡部铜洲大圣尊，长老圣者迦里迦，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་དུས་ལྡན་ནི།</p>
+        <p class="english">Holds golden earrings. Surrounded by eleven-hundred Arhats.</p>
+        <p class="chinese">罗汉千一百围绕，手持金耳环礼赞。</p>
+        <p class="tibetan">དགྲ་བཅོམ་སྟོང་དང་གཅིག་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">གསེར་གྱི་རྣ་ཀོར་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 5: Vajriputra -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 5</span>
+        <p class="arhat-name">Vajriputra · 伐阇罗弗多</p>
+        <p class="tibetan">སིང་ག་ལ་ཡི་གླིང་ན་ནི།</p>
+        <p class="english">I bow to Elder Vajriputra, on the island of Singala.</p>
+        <p class="chinese">僧伽罗洲大圣尊，长老金刚子圣者，</p>
+        <p class="tibetan">གནས་བརྟན་རྡོ་རྗེ་མོ་ཡི་བུ།</p>
+        <p class="english">Threatens with forefinger, holds whisk. One-thousand great Arhats.</p>
+        <p class="chinese">大阿罗汉千围绕，期克拂尘我顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་ཆེན་པོ་སྟོང་གིས་བསྐོར།</p>
+        <p class="tibetan">སྡིག་མཛུབ་རྔ་ཡབ་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 6: Bhadra -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 6</span>
+        <p class="arhat-name">Bhadra · 跋陀罗</p>
+        <p class="tibetan">ཆུ་བོ་ཡ་མུ་ན་གླིང་ན།</p>
+        <p class="english">I bow to Elder Bhadra, on an island in the Yamuna River.</p>
+        <p class="chinese">雅穆纳河洲中大圣尊，长老圣者跋陀罗，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་བཟང་པོ་ནི།</p>
+        <p class="english">One hand gestures teaching, the other meditation. Twelve-hundred Arhats.</p>
+        <p class="chinese">罗汉千二百围绕，说法等持我顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་སྟོང་དང་ཉིས་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">ཆོས་འཆད་མཉམ་བཞག་མཛེས་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 7: Kanakavatsa -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 7</span>
+        <p class="arhat-name">Kanakavatsa · 迦诺迦伐蹉</p>
+        <p class="tibetan">གནས་མཆོག་ཁ་ཆེའི་ཡུལ་ན་ནི།</p>
+        <p class="english">I bow to Elder Kanakavatsa, in the excellent place of Kashmir.</p>
+        <p class="chinese">迦湿弥罗胜境中，长老圣者金犊尊，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་གསེར་བེའུ།</p>
+        <p class="english">Holding a jewelled lasso. Surrounded by five-hundred Arhats.</p>
+        <p class="chinese">大阿罗汉五百绕，手持珍宝索顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་ཆེན་པོ་ལྔ་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">རིན་ཆེན་ཞགས་པ་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 8: Kanaka Bharadvaja -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 8</span>
+        <p class="arhat-name">Kanaka Bharadvaja · 迦诺迦跋黎堕阇</p>
+        <p class="tibetan">ནུབ་ཀྱི་བ་ལང་སྤྱོད་ན་ནི།</p>
+        <p class="english">I bow to Elder Bharadhvaja the Golden, on the western continent.</p>
+        <p class="chinese">西牛货洲圣尊，长老跋黎堕阇金者，</p>
+        <p class="tibetan">བྷ་ར་དྷྭ་ཛ་གསེར་ཆེན་ལ།</p>
+        <p class="english">Both hands gesture meditation. Seven-hundred great Arhats.</p>
+        <p class="chinese">大阿罗汉七百绕，双手等持我顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་ཆེན་པོ་བདུན་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">ཕྱག་གཉིས་མཉམ་བཞག་མཛེས་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 9: Bakula -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 9</span>
+        <p class="arhat-name">Bakula · 巴沽拉</p>
+        <p class="tibetan">བྱང་གི་སྒྲ་མི་སྙན་ན་ནི།</p>
+        <p class="english">I bow to Elder Bakula, on the northern continent of Kurava.</p>
+        <p class="chinese">北俱卢洲大圣尊，长老圣者巴沽拉，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་བ་ཀུ་ལ།</p>
+        <p class="english">Both hands hold a mongoose. Nine-hundred great Arhats.</p>
+        <p class="chinese">大阿罗汉九百绕，双手持鼬我顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་ཆེན་པོ་དགུ་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">ཕྱག་གཉིས་ནེའུ་ལེ་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 10: Rahula -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 10</span>
+        <p class="arhat-name">Rahula · 罗怙罗</p>
+        <p class="tibetan">པྲི་ཡང་ཀུ་ཡི་གླིང་ན་ནི།</p>
+        <p class="english">I bow to Elder Rahula, on the island of Priyangku.</p>
+        <p class="chinese">毕利扬瞿洲中大圣尊，长老圣者罗怙罗，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་སྒྲ་ཆེན་འཛིན།</p>
+        <p class="english">Holding a jewelled crown. Eleven-hundred Arhats.</p>
+        <p class="chinese">罗汉千一百围绕，手持宝冠我顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་སྟོང་དང་གཅིག་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">རིན་ཆེན་ཐོད་ཞུ་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 11: Chudapanthaka -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 11</span>
+        <p class="arhat-name">Chudapanthaka · 注荼半托迦</p>
+        <p class="tibetan">བྱ་རྒོད་ཕུང་པོའི་རི་བོ་ལ།</p>
+        <p class="english">I bow to Elder Chudapanthaka, on Vulture Peak.</p>
+        <p class="chinese">灵鹫山峰大圣尊，长老圣者小路尊，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་ལམ་ཕྲན་བསྟན།</p>
+        <p class="english">Both hands meditation. Sixteen-hundred Arhats.</p>
+        <p class="chinese">罗汉千六百围绕，双手等持我顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་སྟོང་དང་དྲུག་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">ཕྱག་གཉིས་མཉམ་བཞག་མཛེས་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 12: Pindola Bharadvaja -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 12</span>
+        <p class="arhat-name">Pindola Bharadvaja · 宾度罗跋罗堕阇</p>
+        <p class="tibetan">ཤར་གྱི་ལུས་འཕགས་གླིང་ན་ནི།</p>
+        <p class="english">I bow to Elder Pindola, on the eastern continent of Videha.</p>
+        <p class="chinese">东胜身洲大圣尊，长老宾度罗跋罗堕阇，</p>
+        <p class="tibetan">བྷ་ར་དྷྭ་ཛ་བསོད་སྙོམས་ལེན།</p>
+        <p class="english">Holds scripture and begging bowl. One-thousand Arhats.</p>
+        <p class="chinese">罗汉一千各围绕，手持经函钵顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་སྟོང་ཕྲག་གཅིག་གིས་བསྐོར།</p>
+        <p class="tibetan">ལེགས་བམ་ལྷུང་བཟེད་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 13: Mahapanthaka -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 13</span>
+        <p class="arhat-name">Mahapanthaka · 半托迦</p>
+        <p class="tibetan">ལྷ་གནས་སུམ་ཅུ་རྩ་གསུམ་ན།</p>
+        <p class="english">I bow to Elder Mahapanthaka, in the heaven of Traytrimsa.</p>
+        <p class="chinese">三十三天圣尊，长老圣者大路尊，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་ལམ་བསྟན་ནི།</p>
+        <p class="english">Holds scripture, gestures teaching. Nine-hundred great Arhats.</p>
+        <p class="chinese">大阿罗汉九百绕，说经持函我顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་ཆེན་པོ་དགུ་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">ཆོས་འཆད་ལེགས་བམ་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 14: Nagasena -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 14</span>
+        <p class="arhat-name">Nagasena · 那伽犀那</p>
+        <p class="tibetan">རི་ཡི་རྒྱལ་པོ་མངོན་ཡང་ལ།</p>
+        <p class="english">I bow to Elder Nagasena, on the slope of Mount Meru.</p>
+        <p class="chinese">须弥山侧大圣尊，长老圣者那伽犀，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་ཀླུ་ཡི་སྡེ།</p>
+        <p class="english">Holds vase and monk's staff. Twelve-hundred Arhats.</p>
+        <p class="chinese">罗汉千二百围绕，持宝瓶锡杖礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་སྟོང་དང་ཉིས་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">བུམ་པ་མཁར་སིལ་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 15: Gopaka -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 15</span>
+        <p class="arhat-name">Gopaka · 苏频陀</p>
+        <p class="tibetan">རི་ཡི་རྒྱལ་པོ་བྷི་ཧུ་ལར།</p>
+        <p class="english">I bow to Elder Gopaka, on the mountain Bhihula.</p>
+        <p class="chinese">比胡拉山中大圣尊，长老圣者苏频陀，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་སྦེད་བྱེད་ནི།</p>
+        <p class="english">Both hands hold scripture. Fourteen-hundred Arhats.</p>
+        <p class="chinese">罗汉千四百围绕，双手持经函顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་སྟོང་དང་བཞི་བརྒྱས་བསྐོར།</p>
+        <p class="tibetan">ཕྱག་གཉིས་ལེགས་བམ་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- Arhat 16: Abheda -->
+    <div class="arhat-entry">
+        <span class="arhat-number">Arhat 16</span>
+        <p class="arhat-name">Abheda · 阿秘特</p>
+        <p class="tibetan">རི་ཡི་རྒྱལ་པོ་གངས་ཆེན་ལ།</p>
+        <p class="english">I bow to Elder Abheda, on the king of mountains, Himavat.</p>
+        <p class="chinese">雪山王中大圣尊，长老圣者阿秘特，</p>
+        <p class="tibetan">འཕགས་པའི་གནས་བརྟན་མི་ཕྱེད་པ།</p>
+        <p class="english">Holds a Bodhi-stupa. One-thousand Arhats.</p>
+        <p class="chinese">罗汉一千各围绕，手持菩提塔顶礼。</p>
+        <p class="tibetan">དགྲ་བཅོམ་སྟོང་ཕྲག་གཅིག་གིས་བསྐོར།</p>
+        <p class="tibetan">བྱང་ཆུབ་མཆོད་རྟེན་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- ── HOMAGE TO BUDDHA'S SERVANT ── -->
+    <div class="sub-section">
+        <h4>དགེ་བསྙེན་ཕྱག་འཚལ། · Homage to Buddha's Servant · 顶礼近事护法</h4>
+        <p class="tibetan">འཕགས་པའི་དགེ་བསྙེན་དྷརྨ་ཏ།</p>
+        <p class="english">I bow to the noble layman Dharmātā. He bears scriptures,</p>
+        <p class="chinese">圣近事男达磨多，</p>
+        <p class="tibetan">རལ་པས་སྤྲོས་ཅིང་ལེགས་བམ་འཁུར།</p>
+        <p class="english">wears his hair in a top-knot, and before him dwells Amitabha.</p>
+        <p class="chinese">髻顶背负经典函，</p>
+        <p class="tibetan">ནང་ལྟའི་མདུན་གྱི་མཁའ་ལ་གཟིགས།</p>
+        <p class="english">One hand holds a vase, the other a yak-tail whisk.</p>
+        <p class="chinese">其前虚空住弥陀，</p>
+        <p class="tibetan">རྔ་ཡབ་བུམ་པ་འཛིན་ཕྱག་འཚལ།</p>
+        <p class="english">手持宝瓶拂尘礼。</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- ── HOMAGE TO THE 4 GUARDIAN KINGS ── -->
+    <div class="sub-section">
+        <h4>རྒྱལ་ཆེན་བཞིའི་ཕྱག་འཚལ། · Homage to the 4 Guardian Kings · 顶礼四大天王</h4>
+        <p class="tibetan">བརྩོན་པའི་གོ་བགོས་མཐུ་སྟོབས་ཅན།</p>
+        <p class="english">I bow to the four Great Kings who guard the directions.</p>
+        <p class="chinese">东方持国南增长，</p>
+        <p class="tibetan">སངས་རྒྱས་བསྟན་པ་ལེགས་སྲུང་བ།</p>
+        <p class="english">Armored with exertion, they guard well the Buddha's Teaching.</p>
+        <p class="chinese">西方广目北多闻，精进甲胄具威力，善护佛陀正法者，</p>
+        <p class="tibetan">ཤར་ལྷོ་ནུབ་བྱང་ཕྱོགས་བཞི་ཡི།</p>
+        <p class="tibetan">རྒྱལ་ཆེན་བཞི་ལ་ཕྱག་འཚལ་ལོ།</p>
+        <p class="english">东南西北四天王，我今恭敬而顶礼。</p>
+        <p class="blessing-line">བླ་མའི་སྐུ་ཚེ་བརྟན་པ་དང་། བསྟན་པ་རྒྱས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="blessing-line-chinese">愿师身寿得坚固，教法弘扬祈加持。</p>
+    </div>
+
+    <!-- ── OFFERINGS ── -->
+    <div class="sub-section">
+        <h4>མཆོད་པ། · Offerings · 供养</h4>
+        <p class="tibetan">མེ་ཏོག་དམ་པ་ཕྲེང་བ་དམ་པ་དང་།</p>
+        <p class="english">I make offerings to those Conquerors, with fine flowers, fine garlands and cymbals, with balms, choice parasols, choice lamps, and the finest incense.</p>
+        <p class="chinese">以诸最胜妙花鬘，伎乐涂香及胜盖，最胜灯明妙烧香，我悉供养诸如来。</p>
+        <p class="tibetan">སིལ་སྙན་རྣམས་དང་བྱུག་པ་མཆོག་དང་།</p>
+        <p class="tibetan">མར་མེ་མཆོག་དང་བདུག་སྤོས་དམ་པ་ཡིས།</p>
+        <p class="tibetan">རྒྱལ་བ་དེ་དག་ལ་ནི་མཆོད་པར་བགྱི།</p>
+
+        <p class="tibetan" style="margin-top:1rem;">ན་བཟའ་དམ་པ་རྣམས་དང་དྲི་མཆོག་དང་།</p>
+        <p class="english">I make offerings with fine garments and choice fragrances, sandalwood powders equaling Mount Sumeru, and with all the choicest, most special arrangements. I imagine whatever offerings are supreme and vast, and those also I offer to all Conquerors.</p>
+        <p class="chinese">诸妙衣服最胜香，末香积如须弥山，一切最胜庄严具，我悉供养诸如来。所有无上广大供，我悉意化供诸佛。</p>
+        <p class="tibetan">ཕྱེ་མ་ཕུར་མ་རི་རབ་མཉམ་པ་དང་།</p>
+        <p class="tibetan">བཀོད་པ་ཁྱད་པར་འཕགས་པའི་མཆོག་ཀུན་གྱིས།</p>
+        <p class="tibetan">རྒྱལ་བ་དེ་དག་ལ་ནི་མཆོད་པར་བགྱི།</p>
+        <p class="tibetan">མཆོད་པ་གང་རྣམས་བླ་མེད་རྒྱ་ཆེ་བ།</p>
+        <p class="tibetan">དེ་དག་རྒྱལ་བ་ཐམས་ཅད་ལ་ཡང་མོས།</p>
+        <p class="tibetan">བཟང་པོ་སྤྱོད་ལ་དད་པའི་སྟོབས་དག་གིས།</p>
+        <p class="english">Through the powers of confidence in good conduct, I pay homage and make offerings to all the Victorious Ones.</p>
+        <p class="chinese">以普贤行信解力，顶礼供养诸如来。</p>
+        <p class="tibetan">རྒྱལ་བ་ཀུན་ལ་ཕྱག་འཚལ་མཆོད་པར་བགྱི།</p>
+    </div>
+
+    <!-- ── CLOUD OF OFFERINGS MANTRA ── -->
+    <div class="sub-section">
+        <h4>མཆོད་སྤྲིན་སྔགས། · Cloud of Offerings Mantra · 供云咒</h4>
+        <p class="instruction">(3 times with cymbals / 念三遍，小钹伴奏)</p>
+        <div class="mantra mantra-small">
+            ན་མོ་རཏྣ་ཏྲ་ཡཱ་ཡ། ཨོཾ་ན་མོ་བྷ་ག་ཝ་ཏེ། བཛྲ་སཱ་ར་པྲ་མརྡ་ནེ། ཏ་ཐཱ་ག་ཏཱ་ཡ། ཨརྷ་ཏེ། སཾ་མྱཀྶཾ་བུདྡྷ་ཡ། ཏདྱ་ཐཱ། ཨོཾ་བཛྲེ་བཛྲེ། མ་ཧཱ་བཛྲེ། མ་ཧཱ་ཏེ་ཛོ་བཛྲེ། མ་ཧཱ་བིདྱཱ་བཛྲེ། མ་ཧཱ་བོ་དྷི་ཙིཏྟ་བཛྲེ། མ་ཧཱ་བོ་དྷི་མཎྜོ་པ་སཾ་ཀྲ་མ་ཎ་བཛྲེ། སརྦ་ཀརྨ་ཨཱ་ཝ་ར་ཎ་བི་ཤོ་དྷ་ན་བཛྲ་སྭཱ་ཧཱ།
+        </div>
+        <p class="instruction">(Then 100-syllable mantra for purification / 百字明咒)</p>
+    </div>
+
+    <!-- ── LONG MAṆḌALA OFFERING ── -->
+    <div class="mandala-section">
+        <h4 style="text-align:center;font-family:var(--font-display);color:var(--maroon);letter-spacing:0.06em;margin-bottom:1rem;">མཎྜལ་རྒྱས་པ། · Long Maṇḍala Offering · 广献曼荼罗</h4>
+        <p class="mantra-line">ཨོཾ་བཛྲ་བྷཱུ་མི་ཨཱཿ ཧཱུྃ། གཞི་ཡོངས་སུ་དག་པ་དབང་ཆེན་གསེར་གྱི་ས་གཞི།</p>
+        <p class="english" style="text-align:center;">OṂ VAJRA BHUMI ĀH HŪṂ. The ground is totally pure, of great power, with earth of gold.</p>
+        <p class="chinese" style="text-align:center;">嗡 班杂 部弥 阿 吽，基界清净大自在金地。</p>
+        <p class="mantra-line">ཨོཾ་བཛྲ་རེ་ཁེ་ཨཱཿ ཧཱུྃ། ཕྱི་ལྕགས་རི་ཁོར་ཡུག་གིས་བསྐོར་བའི་དབུས་སུ་ཧཱུྃ།</p>
+        <p class="english" style="text-align:center;">OṂ VAJRA RESHÉ ĀH HŪṂ. Surrounded by mountains of iron, in the center is HŪṂ.</p>
+        <p class="chinese" style="text-align:center;">嗡 班杂 惹喀 阿 吽，外铁围山围绕，中央吽字。</p>
+        <p class="mantra-line">རི་རྒྱལ་པོ་རི་རབ། ཤར་ལུས་འཕགས་པོ། ལྷོ་འཛམ་བུ་གླིང་། ནུབ་བ་ལང་སྤྱོད། བྱང་སྒྲ་མི་སྙན།</p>
+        <p class="english" style="text-align:center;">Mount Meru, East Purvavideha, South Jambudvipa, West Aparagodaniya, North Uttarakuru...</p>
+        <p class="chinese" style="text-align:center;">山王须弥山，东胜身洲，南赡部洲，西牛货洲，北俱卢洲…</p>
+        <p class="mantra-line">ལུས་དང་ལུས་འཕགས། རྔ་ཡབ་དང་རྔ་ཡབ་གཞན། ཡོ་ལྡན་དང་ལམ་མཆོག་འགྲོ། སྒྲ་མི་སྙན་དང་སྒྲ་མི་སྙན་གྱི་ཟླ།</p>
+        <p class="mantra-line">རིན་པོ་ཆེའི་རི་བོ། དཔག་བསམ་གྱི་ཤིང་། འདོད་འཇོའི་བ། མ་རྨོས་པའི་ལོ་ཏོག</p>
+        <p class="mantra-line">འཁོར་ལོ་རིན་པོ་ཆེ། ནོར་བུ་རིན་པོ་ཆེ། བཙུན་མོ་རིན་པོ་ཆེ། བློན་པོ་རིན་པོ་ཆེ།</p>
+        <p class="mantra-line">གླང་པོ་རིན་པོ་ཆེ། རྟ་མཆོག་རིན་པོ་ཆེ། དམག་དཔོན་རིན་པོ་ཆེ། གཏེར་ཆེན་པོའི་བུམ་པ།</p>
+        <p class="mantra-line">བགེགས་མོ་མ། ཕྲེང་བ་མ། གླུ་མ། གར་མ། བདུག་སྤོས་མ། མེ་ཏོག་མ། མར་མེ་མ། དྲི་ཆབ་མ།</p>
+        <p class="mantra-line">ཉི་མ། ཟླ་བ། རིན་པོ་ཆེའི་གདུགས། ཕྱོགས་ལས་རྣམ་པར་རྒྱལ་བའི་རྒྱལ་མཚན།</p>
+        <p class="english" style="text-align:center;margin-top:1rem;">I offer this perfect wealth of gods and men to Buddha Shākyamuni, the Sixteen Arhats, and retinue.</p>
+        <p class="chinese" style="text-align:center;">人天圆满福聚，无有缺失，以此供献能仁王佛、十六大阿罗汉并诸眷属。</p>
+        <p class="mantra-line">ལྷ་དང་མིའི་དཔལ་འབྱོར་ཕུན་སུམ་ཚོགས་པ་མ་ཚང་བ་མེད་པ་འདི་ཉིད་ཐུབ་དབང་གནས་བརྟན་...</p>
+        <p class="tibetan" style="text-align:center;">ཐུགས་རྗེས་འགྲོ་བའི་དོན་དུ་བཞེས་སུ་གསོལ།</p>
+        <p class="english" style="text-align:center;">Please compassionately accept it for the sake of living beings.</p>
+        <p class="chinese" style="text-align:center;">为利众生悲悯纳受。</p>
+        <p class="tibetan" style="text-align:center;font-size:0.8rem;">བཞེས་ནས་ལུང་རྟོགས་ཀྱི་བསྟན་པ་རིན་པོ་ཆེ་དར་ཞིང་རྒྱས་ལ་ཡུན་རིང་དུ་གནས་པར་བྱིན་གྱིས་རློབས་ཏུ་གསོལ།</p>
+        <p class="english" style="text-align:center;font-size:0.85rem;">Having accepted, grant the blessing that the teachings of scripture and realization spread and remain long.</p>
+        <p class="chinese" style="text-align:center;font-size:0.85rem;">祈请受已，令教证法宝广大增长，长久住世，赐予加持。</p>
+        <p class="mantra-line" style="font-size:0.75rem;">ཨོཾ་གུ་རུ་བུདྡྷ་བོ་དྷི་སཏྭ་ས་པ་རི་ཝཱ་ར་རཏྣ་མཎྜལ་པཱུ་ཛ་མེ་གྷ་ས་མུ་དྲ་ས་ཕ་ར་ཎ་ས་མ་ཡེ་ཧཱུྃ།</p>
+        <p class="transliteration" style="text-align:center;font-size:0.7rem;">Oṃ Guru Buddha Bodhisattva Saparivāra Ratna Maṇḍala Pūja Megha Samudra Spharaṇa Samaye Hūṃ</p>
+    </div>
+
+    <!-- ── CONFESSION ── -->
+    <div class="sub-section">
+        <h4>བཤགས་པ། · Confession · 忏悔</h4>
+        <p class="tibetan">འདོད་ཆགས་ཞེ་སྡང་གཏི་མུག་དབང་གིས་ནི།</p>
+        <p class="english">I confess each and every sin done with body, speech, and mind through the power of desire, hatred, and ignorance.</p>
+        <p class="chinese">贪瞋痴力所转故，我以身语意诸行，</p>
+        <p class="tibetan">ལུས་དང་ངག་དང་དེ་བཞིན་ཡིད་ཀྱིས་ཀྱང་།</p>
+        <p class="tibetan">སྡིག་པ་བདག་གིས་བགྱིས་པ་ཅི་ཅི་པ།</p>
+        <p class="english">所造一切诸罪业，</p>
+        <p class="tibetan">དེ་དག་ཐམས་ཅད་བདག་གིས་སོ་སོར་བཤགས།</p>
+        <p class="english">我今一一皆忏悔。</p>
+    </div>
+
+    <!-- ── REJOICING ── -->
+    <div class="sub-section">
+        <h4>རྗེས་སུ་ཡི་རང་། · Rejoicing · 随喜</h4>
+        <p class="tibetan">ཕྱོགས་བཅུའི་རྒྱལ་བ་ཀུན་དང་སངས་རྒྱས་སྲས།</p>
+        <p class="english">I rejoice at all the merits of all the Conquerors, Sons of Buddhas, Pratyekabuddhas, Shravakas, and all living beings.</p>
+        <p class="chinese">十方一切诸佛及佛子，独觉声闻学无学，乃至一切众生所修善，我悉至心而随喜。</p>
+        <p class="tibetan">རང་རྒྱལ་རྣམས་དང་སློབ་དང་མི་སློབ་དང་།</p>
+        <p class="tibetan">འགྲོ་བ་ཀུན་གྱི་བསོད་ནམས་གང་ལ་ཡང་།</p>
+        <p class="tibetan">དེ་དག་ཀུན་གྱི་རྗེས་སུ་བདག་ཡི་རང་།</p>
+    </div>
+
+    <!-- ── BESEECHING ── -->
+    <div class="sub-section">
+        <h4>ཆོས་ཀྱི་འཁོར་ལོ་བསྐོར་བར་འཁུལ། · Beseeching · 劝请转法轮</h4>
+        <p class="tibetan">གང་རྣམས་ཕྱོགས་བཅུའི་འཇིག་རྟེན་སྒྲོན་མ་རྣམས།</p>
+        <p class="english">I urge all Protectors who have gradually achieved enlightenment without clinging to Buddhahood, to turn the Supreme Wheel of the Dharma.</p>
+        <p class="chinese">十方所有世间灯，渐次成佛未执著，我于彼等怙主前，劝请转于无上轮。</p>
+        <p class="tibetan">བྱང་ཆུབ་རིམ་པར་སངས་རྒྱས་མ་ཆགས་ཉེ།</p>
+        <p class="tibetan">མགོན་པོ་དེ་དག་བདག་གི་ཐམས་ཅད་ལ།</p>
+        <p class="tibetan">འཁོར་ལོ་བླ་ན་མེད་པ་བསྐོར་བར་འཁུལ།</p>
+    </div>
+
+    <!-- ── SUPPLICATING ── -->
+    <div class="sub-section">
+        <h4>གཞན་ཕན་དུ་བཞུགས་པར་གསོལ། · Supplicating · 祈请住世</h4>
+        <p class="tibetan">མྱ་ངན་འདའ་སྟོན་གང་བཞེད་དེ་དག་ལ།</p>
+        <p class="english">To those wishing to manifest Nirvana, with clasped hands I pray, for the benefit and happiness of all beings, may they remain for as many eons as atoms in the Pure Lands.</p>
+        <p class="chinese">诸欲示现般涅槃，为利乐一切众生故，乃至刹尘劫数中，我合十指祈请住。</p>
+        <p class="tibetan">འགྲོ་བ་ཀུན་ལ་ཕན་ཞིང་བདེ་བའི་ཕྱིར།</p>
+        <p class="tibetan">བསྐལ་པ་ཞིང་གི་རྡུལ་སྙེད་བཞུགས་པར་ཡང་།</p>
+        <p class="tibetan">བདག་གི་ཐལ་མོ་རབ་སྦྱར་གསོལ་བར་བགྱི།</p>
+    </div>
+
+    <!-- ── DEDICATION ── -->
+    <div class="sub-section">
+        <h4>བསྔོ་བ། · Dedication · 回向</h4>
+        <p class="tibetan">ཕྱག་འཚལ་བ་དང་མཆོད་ཅིང་བཤགས་པ་དང་།</p>
+        <p class="english">Whatever virtue accumulated through prostrations, offerings, confession, rejoicing, beseeching, and supplicating — I dedicate it all toward enlightenment.</p>
+        <p class="chinese">顶礼供养及忏悔，随喜劝请祈请力，我所积聚微妙善，一切悉皆回向菩提。</p>
+        <p class="tibetan">རྗེས་སུ་ཡི་རང་བསྐུལ་ཞིང་གསོལ་བ་ཡིས།</p>
+        <p class="tibetan">དགེ་བ་ཅུང་ཟད་བདག་གིས་ཅི་བསགས་པ།</p>
+        <p class="tibetan">ཐམས་ཅད་བདག་གིས་བྱང་ཆུབ་ཕྱིར་བསྔོའོ།</p>
+    </div>
+
+    <!-- ── MEDITATION AND MANTRA ── -->
+    <div class="sub-section">
+        <h4>བསྒོམ་སྔགས། · Meditation and Mantra · 观想与咒</h4>
+        <p class="tibetan">ཐུབ་དབང་འཁོར་བཅས་ཀྱི་མཚན་ནས་འབོད་ཏེ་ཐུགས་དམ་བསྐུལ་བར་གྱུར།</p>
+        <p class="english">Oh great Sage, I am calling you and your retinue by name — please keep your vow!</p>
+        <p class="chinese">能仁王及眷属，我称名号祈请，忆念誓愿！</p>
+        <p class="instruction">(Recite 100 times or more with devotion / 专注虔诚念百遍以上)</p>
+        <div class="mantra">
+            ཏདྱ་ཐཱ། ཨོཾ་མུ་ནི་མུ་ནི་མ་ཧཱ་མུ་ནི་ཤཱཀྱ་མུ་ནི་ཡེ་སྭཱ་ཧཱ།
+        </div>
+        <p class="transliteration" style="text-align:center;">Tadyathā / Oṃ Muni Muni Mahāmuni Shākyamuniye Svāhā</p>
+    </div>
+
+    <!-- ── FINAL DEDICATION ── -->
+    <div class="dedication-block">
+        <h4 style="font-family:var(--font-display);color:var(--maroon);letter-spacing:0.06em;margin-bottom:1.2rem;">བསྔོ་བ། · Final Dedication · 回向</h4>
+        <p class="tibetan">སངས་རྒྱས་སྤྲུལ་པ་དགྲ་བཅོམ་འཕགས་པའི་ཚོགས།</p>
+        <p class="english">Host of noble Arhats, emanations of the Buddha, protectors of the Teaching,</p>
+        <p class="chinese">佛所化现圣罗汉众，为利有情护持正法者，</p>
+        <p class="tibetan">འགྲོ་བའི་དོན་དུ་བསྟན་པ་སྐྱོང་མཛད་པ།</p>
+        <p class="tibetan">དཀོན་མཆོག་གསུམ་དངོས་གནས་བརྟན་བཅུ་དྲུག་གིས།</p>
+        <p class="english">Sixteen Holy Elders, the real Three Jewels, bless that the Teaching remains long.</p>
+        <p class="chinese">真是三宝十六圣尊，愿教久住祈加持。</p>
+        <p class="tibetan">བསྟན་པ་ཡུན་རིང་གནས་པར་བྱིན་གྱིས་རློབས།</p>
+
+        <p class="tibetan" style="margin-top:1rem;">ཐུགས་རྗེའི་བདག་ཉིད་གནས་བརྟན་བཅུ་དྲུག་གི།</p>
+        <p class="english">You whose nature is compassion, together with your retinues, who have crossed the ocean of existence and are free of addictions,</p>
+        <p class="chinese">大悲自性十六圣尊，及诸眷属，已越生死海无烦恼，</p>
+        <p class="tibetan">འཁོར་ཚོགས་སྲིད་མཚོ་ལས་རྒལ་ཉོན་མོངས་མེད།</p>
+        <p class="tibetan">ཁྲི་དང་དྲུག་སྟོང་བཞི་བརྒྱའི་ཚོགས་རྣམས་ཀྱིས།</p>
+        <p class="tibetan">བསྟན་པ་ཡུན་རིང་གནས་པར་བྱིན་གྱིས་རློབས།</p>
+        <p class="chinese">愿教久住祈加持。</p>
+
+        <p class="tibetan" style="margin-top:1rem;">སེམས་ཅན་ཡོན་གྱི་གསོས་གྱུར་དགྲ་བཅོམ་པ།</p>
+        <p class="english">You Arhats, the delight of all beings, worthy recipients of offerings, great and glorious beings, bless that the Teaching remains long.</p>
+        <p class="chinese">众生福田阿罗汉，智者及诸侍从之供处，诸大士夫圣者众，愿教久住祈加持。</p>
+        <p class="tibetan">རིག་དང་ཞབས་བརྟན་སྐྱེ་རྒུས་སྦྱིན་གནས་ཆེ།</p>
+        <p class="tibetan">འཕགས་པའི་གང་ཟག་ཆེན་པོའི་ཚོགས་རྣམས་ཀྱིས།</p>
+        <p class="tibetan">བསྟན་པ་ཡུན་རིང་གནས་པར་བྱིན་གྱིས་རློབས།</p>
+
+        <p class="tibetan" style="margin-top:1rem;">བདག་གཞན་དགེ་བའི་རྩ་བ་འདི་ཡིས་ནི།</p>
+        <p class="english">By this root of virtue of myself and others, may the Teaching, the source of benefit and happiness, spread, all sources of suffering completely removed, and the ocean of existence quickly dried up.</p>
+        <p class="chinese">我及他人此善根，利乐之源圣教兴，断尽一切苦集已，轮回大海速枯竭。</p>
+        <p class="tibetan">ཕན་བདེའི་འབྱུང་གནས་བསྟན་པ་འཕེལ་གྱུར་ཞིང་།</p>
+        <p class="tibetan">སྡུག་བསྔལ་ཀུན་འབྱུང་མ་ལུས་རབ་སྤངས་ནས།</p>
+        <p class="tibetan">སྲིད་པའི་རྒྱ་མཚོ་མྱུར་དུ་སྐེམས་པར་ཤོག</p>
+
+        <p class="tibetan" style="margin-top:1rem;">བསོད་ནམས་རྒྱ་མཚོ་ཡོངས་སུ་རྫོགས་གྱུར་ཅིང་།</p>
+        <p class="english">May the ocean of merit be fully completed, the ocean of wisdom thoroughly purified, all prayers without exception fulfilled, and all beings become especially exalted.</p>
+        <p class="chinese">福德大海悉圆满，智慧大海净无余，愿行大海无余圆，一切众生皆殊胜。</p>
+        <p class="tibetan">ཡེ་ཤེས་རྒྱ་མཚོ་རྣམ་པར་དག་གྱུར་ཏེ།</p>
+        <p class="tibetan">སྨོན་ལམ་རྒྱ་མཚོ་མ་ལུས་ཡོངས་རྫོགས་ནས།</p>
+        <p class="tibetan">ལུས་ཅན་ཀུན་ལ་ཁྱད་པར་འཕགས་པར་ཤོག</p>
+    </div>
+
+    <!-- ── BENEDICTION ── -->
+    <div class="dedication-block" style="background:linear-gradient(180deg,#fef9f2 0%,#fdf5ea 100%);">
+        <h4 style="font-family:var(--font-display);color:var(--maroon);letter-spacing:0.06em;margin-bottom:1.2rem;">བཀྲ་ཤིས། · Benediction · 吉祥颂</h4>
+        <p class="tibetan">ཚོགས་གཉིས་མཐར་ཕྱིན་དུས་གསུམ་རྒྱལ་བ་ཡི།</p>
+        <p class="english">May we have the good fortune of the unequalled Guru who has finished the two accumulations and accomplishes the activities of the Victors.</p>
+        <p class="chinese">二资粮满三世佛，事业成就功德无别，无等上师妙吉祥。</p>
+        <p class="tibetan">འཕྲིན་ལས་སྒྲུབ་ཅིང་ཡོན་ཏན་རྣམ་དབྱེར་མེད།</p>
+        <p class="tibetan">བསྐལ་པ་མཉམ་པའི་གདུལ་བྱ་སྨིན་མཛད་པ།</p>
+        <p class="tibetan">མཉམ་མེད་བླ་མ་མཆོག་གི་བཀྲ་ཤིས་ཤོག</p>
+
+        <p class="tibetan" style="margin-top:1rem;">དུས་གསུམ་རྒྱལ་བ་སྲས་བཅས་ཐུགས་རྗེ་ཡིས།</p>
+        <p class="english">May we have the good fortune of the great Elders who, in the manner of Hearers, protect the Teaching and accomplish beings' aims.</p>
+        <p class="chinese">三世诸佛菩萨悲，现声闻相乃至轮回尽，护教利生，大圣尊者赐吉祥。</p>
+        <p class="tibetan">ཉན་ཐོས་ཚུལ་བཟུང་སྲིད་པ་ཇི་སྲིད་བར།</p>
+        <p class="tibetan">བསྟན་པ་སྐྱོང་ཞིང་འགྲོ་བའི་དོན་མཛད་པ།</p>
+        <p class="tibetan">གནས་བརྟན་ཆེན་པོ་རྣམས་ཀྱི་བཀྲ་ཤིས་ཤོག</p>
+
+        <p class="tibetan" style="margin-top:1rem;">ཟབ་ཅིང་རྒྱ་ཆེའི་གཟིགས་པ་པོ།</p>
+        <p class="english">May we have the good fortune of the four Great Kings, Dhritarashtra, Virudhaka, Virupaksha, Vaishravana.</p>
+        <p class="chinese">深广目视诸众生，持国、增长、广目及多闻，四大天王赐吉祥。</p>
+        <p class="tibetan">ཡུལ་འཁོར་སྲུང་དང་འཕགས་སྐྱེས་པོ།</p>
+        <p class="tibetan">ཆེན་མི་བཟང་དང་རྣམ་ཐོས་སྲས།</p>
+        <p class="tibetan">རྒྱལ་ཆེན་བཞི་ཡི་བཀྲ་ཤིས་ཤོག</p>
+
+        <p class="tibetan" style="margin-top:1rem;">ཕན་བདེ་འབྱུང་བའི་གནས་གཅིག་པུ།</p>
+        <p class="english">May the Teaching, the only source of benefit and happiness, remain long, and may the victory banner of the lives of the holy Teaching-holders be firm.</p>
+        <p class="chinese">利乐唯一之源处，愿正教法久住世，诸持教法尊圣士，寿命胜幢永坚固。</p>
+        <p class="tibetan">བསྟན་པ་ཡུན་རིང་གནས་པ་དང་།</p>
+        <p class="tibetan">བསྟན་འཛིན་སྐྱེས་བུ་དམ་པ་རྣམས།</p>
+        <p class="tibetan">སྐུ་ཚེའི་རྒྱལ་མཚན་བརྟན་གྱུར་ཅིག</p>
+
+        <p class="tibetan" style="margin-top:1rem;">སྟོན་པ་འཇིག་རྟེན་ཁམས་སུ་བྱོན་པ་དང་།</p>
+        <p class="english">By the coming of the Teacher into the world, by the sunshine-like brilliance of the Teaching, and by the harmony of the Community of holders and disciples, may it be our good fortune that the Teaching long endures.</p>
+        <p class="chinese">大师降生于此世，教法如日光明显，持教师徒众和谐，教法久住得吉祥。</p>
+        <p class="tibetan">བསྟན་པ་ཉི་འོད་བཞིན་དུ་གསལ་བ་དང་།</p>
+        <p class="tibetan">བསྟན་འཛིན་ཕུ་སློབ་དགེ་འདུན་མཐུན་པ་ཡིས།</p>
+        <p class="tibetan">བསྟན་པ་ཡུན་རིང་གནས་པའི་བཀྲ་ཤིས་ཤོག</p>
+    </div>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <div class="footer-ornament">❖</div>
+    <p class="footer-text">
+        དགེ་བར་གྱུར་ཅིག། · May virtue abound · 愿吉祥
+    </p>
+
+</body>
+</html>
